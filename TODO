@@ -1,0 +1,22 @@
+Compiler Design
+
+> Scanner :
+        Read input file
+        Send to token factory
+
+> Make tokens :
+        Take strings
+        Validate
+        Make tokens
+        Return tokens to Parser
+
+> Parser :
+        Take tokens in sequence and build parse tree
+        Tree can have sub-tree as its child
+
+> Evaluate :
+        Tree should be able to evaluate tokens
+
+> conversion :
+        Tree will be able to convert token expression in other language
+
