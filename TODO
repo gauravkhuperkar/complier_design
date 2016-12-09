@@ -20,11 +20,6 @@ Compiler Design
 > conversion :
         Tree will be able to convert token expression in other language
 
-
-
-Expression interface :
-         Methods : evaluate
-
-         Implemented by : Addition, Subtraction, Number
-
-    
+Expressions
+    interface : evaluate
+         Methods : Implemented by : Addition, Subtraction, Number

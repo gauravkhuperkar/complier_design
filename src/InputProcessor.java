@@ -2,21 +2,24 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 public class InputProcessor {
     public static void main(String[] args) throws FileNotFoundException {
         FileReader fileReader = new FileReader(args[0]);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
-        ArrayList inputString = new ArrayList();
+        String inputString = new String();
         try {
             String text = bufferedReader.readLine();
             while (text != null){
-                inputString.add(text);
+                inputString = inputString.concat(text);
+                System.out.println(text);
                 text = bufferedReader.readLine();
             }
-            inputString.remove(inputString.size()-1);
+            Scanner scanner  = new Scanner(inputString);
+            String[] tokens = scanner.makeTokens();
             System.out.println("my array is "+ inputString);
+            System.out.println("my tokens are "+ tokens);
         } catch (IOException err) {
             err.printStackTrace();
         }

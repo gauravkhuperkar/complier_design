@@ -1,4 +1,4 @@
 .idea/
 compiler_design.iml
 out/
-.class
+*.class
